@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUGX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="landing">
+            <header>
+                <a href="#" class="logo">
+                    <img src="images/landing/logo.png" alt="Logo" title="Logo">
+                </a>
+                <div class="nav-icon" id="list">
+                    <button class="icon" onclick="show()">
+                        <i class="fas fa-bars" id="icon"></i>
+                    </button>
+                    <ul class="nav" >
+                        <li>
+                            <a href="#Home" class="active">
+                                home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Shop">
+                                our shop
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Product">
+                                product details
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Contact">
+                                contact us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Sign" class="sign">
+                                sign in
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <div class="content">
+                <div class="text">
+                    <div class="hello">
+                        <h4>welcome to lugx</h4>
+                        <h1>best <div>gaming</div> site ever!</h1>
+                    </div>
+                    <p class="description">
+                        LUGX gaming is free bootstrap 5 HTML CSS website template for your gaming websites.
+                        You can download and use this layout for commercial purpose. Please tell your friends about templateMo.
+                    </p>
+                    <form class="form">
+                        <input type="text" placeholder="Type Something">
+                        <input type="button" value="search now">
+                    </form>
+                </div>
+                <div class="image">
+                    <div class="img-cart">
+                        <img src="images/landing/banner-image.jpg" alt="landing-img" title="landing-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flow">
+            <ul class="flow-list">
+                <li>
+                    <div class="image">
+                        <img src="images/featured/featured-01.png" alt="Flow image">
+                    </div>
+                    <h3>
+                        free storage
+                    </h3>
+                </li>
+                <li>
+                    <div class="image">
+                        <img src="images/featured/featured-02.png" alt="Flow image">
+                    </div>
+                    <h3>
+                        user more
+                    </h3>
+                </li>
+                <li>
+                    <div class="image">
+                        <img src="images/featured/featured-03.png" alt="Flow image">
+                    </div>
+                    <h3>
+                        reply ready
+                    </h3>
+                </li>
+                <li>
+                    <div class="image">
+                        <img src="images/featured/featured-04.png" alt="Flow image">
+                    </div>
+                    <h3>
+                        easy layout
+                    </h3>
+                </li>
+            </ul>
+        </section>
+        <section class="trending">
+            <div class="title">
+                <p class="state">trending</p>
+                <div class="head">
+                    <h1>trending games</h1>
+                    <a href="#">view all</a>
+                </div>
+                
+            </div>
+            <ul class="game-carts">
+                    <li>
+                        <div class="image">
+                            <img src="images/trending/trending-01.jpg" alt="game">
+                            <p class="price"><strike>$28</strike><br><b>$20</b></p>
+                        </div>
+                        <div class="details">
+                            <div class="name-type">
+                                <p class="type">Action</p>
+                                <h3>Assasin Creed</h3>
+                            </div>
+                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="images/trending/trending-02.jpg" alt="game">
+                            <p class="price"><b>$44</b></p>
+                        </div>
+                        <div class="details">
+                            <div class="name-type">
+                                <p class="type">Action</p>
+                                <h3>Assasin Creed</h3>
+                            </div>
+                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="images/trending/trending-03.jpg" alt="game">
+                            <p class="price"><strike>$64</strike><br><b>$44</b></p>
+                        </div>
+                        <div class="details">
+                            <div class="name-type">
+                                <p class="type">Action</p>
+                                <h3>Assasin Creed</h3>
+                            </div>
+                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="images/trending/trending-04.jpg" alt="game">
+                            <p class="price"><b>$32</b></p>
+                        </div>
+                        <div class="details">
+                            <div class="name-type">
+                                <p class="type">Action</p>
+                                <h3>Assasin Creed</h3>
+                            </div>
+                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                        </div>
+                    </li>
+                </ul>
+        </section>
+    </div>
+    <script>
+        let x = document.getElementById("list");
+        let icona = document.getElementById("icon")
+        function show(){
+            x.classList.toggle("show")
+        }
+    </script>
+</body>
+
+</html>

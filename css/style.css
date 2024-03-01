@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+}
+section{
+    padding: 0 25px;
+}
+.landing{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/landing/banner-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 0 100px 100px;
+}
+.landing header{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.landing header .logo img{
+    width: 115px;
+}
+.landing header .nav-icon .nav{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.landing header .nav-icon .icon{
+    display: none;
+}
+.landing header .nav-icon .nav a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 20px;
+    transition: 0.3s background-color;
+}
+.landing header .nav-icon .nav a.active{
+    background-color: #fff3;
+}
+.landing header .nav-icon .nav a:hover{
+    background-color: #fff3;
+}
+.landing header .nav-icon .nav a.sign{
+    background-color: #ff4f5a;
+}
+.landing .content{
+    width: 100%;
+    height: calc(100vh - 75px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.landing .content .text{
+    margin-top: -75px;
+    color: white;
+    width: 50%;
+}
+.landing .content .text .hello{
+    text-transform: uppercase;
+}
+.landing .content .text .hello h1{
+    font-size: 2em;
+    margin-top: 15px;
+}
+.landing .content .text .hello h1 div{
+    display: inline-block;
+    position: relative;
+}
+.landing .content .text .hello h1 div::after{
+    content: '';
+    background-image: url(../images/landing/caption-dec.png);
+    width: 100%;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    bottom: -5px;
+    background-size: 100% 100%;
+}
+.landing .content .text .description{
+    margin: 30px 0;
+    line-height: 25px;
+}
+.landing .content .text .form{
+    width: 450px;
+    background-color: white;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+}
+.landing .content .text .form input[type="text"]{
+    border: none;
+    padding: 15px 0 15px 20px;
+    width: 70%;
+    outline: none;
+}
+.landing .content .text .form input[type="button"]{
+    width: 30%;
+    border: none;
+    color: white;
+    background-color: #ff4f5a;
+    border-radius: 50px 0 0 50px;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+}
+.landing .content .image{
+    margin-top: -75px;
+}
+.landing .content .image .img-cart{
+    width: fit-content;
+    position: relative;
+}
+.landing .content .image .img-cart img{
+    width: 350px;
+    border-radius: 20px;
+}
+.landing .content .image .img-cart::before{
+    content: '$22';
+    position: absolute;
+    padding: 5px 10px;
+    background-color: #007cf8;
+    top: 10px;
+    right: 10px;
+    color: white;
+    border-radius: 20px;
+}
+.landing .content .image .img-cart::after{
+    content: '-40%';
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: #ff4f5a;
+    bottom: -25px;
+    left: -25px;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+/* End Landing */
+/* Start Flow */
+
+.flow{
+    width: 100%;
+    margin-top: -80px;
+    margin-bottom: 80px;
+}
+.flow .flow-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.flow .flow-list li{
+    width: calc(100% / 4.5);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: #0005 0 0 10px 1px;
+    background-color: white;
+}
+.flow .flow-list li .image{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #007cf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.flow .flow-list li .image img{
+    width: 55%;
+}
+.flow .flow-list li h3{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* End Flow */
+/* Start Trending */
+section .title{
+    margin-bottom: 40px;
+}
+section .title .state{
+    text-transform: uppercase;
+    color: #ff4f5a;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+section .title .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+section .title .head h1{
+    text-transform: capitalize;
+    font-size: 32px;
+}
+
+section .title .head a{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12.5px 20px;
+    background-color: #ff4f5a;
+    color: white ;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.trending{
+    padding-bottom: 50px;
+}
+.trending ul{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4,1fr);
+    /* gap: 1px; */
+    list-style: none;
+}
+.trending ul li{
+    width: 225px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #ededed;
+}
+
+.trending ul li .image{
+    width: 100%;
+    position: relative;
+}
+.trending ul li .image img{
+    width: 100%;
+    border-radius: 20px;
+}
+.trending ul li .image .price{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #007cf8;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+.trending ul li .image .price strike{
+    font-size: 12px;
+    font-weight: 600;
+}
+.trending ul li .details{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.trending ul li .details .name-type{
+    width: fit-content;
+}
+.trending ul li .details .name-type .type{
+    color: #888;
+    margin-bottom: 5px;
+}
+.trending ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #ff4f5a;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 130%;
+    width: 45px;
+    height: 45px;
+}
+
+/* End Trending */
+/* Media Queries */
+@media (max-width: 1024px){
+    .trending ul{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2,275px);
+        gap: 10px;
+    }
+    .trending ul li{
+        width: 275px;
+    }
+}
+@media (max-width:900px){
+    .landing header .nav-icon{
+        position: relative;
+    }
+    .landing header .nav-icon .icon{
+        display: block;
+        font-size: 2em;
+        color: white;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .landing header .nav-icon .nav{
+        display: none;
+        width: 200px;
+        height: 350px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column ;
+        position: absolute;
+        top: 30px;
+        left: -200px;
+        background-color: #0005;
+        z-index: 50;
+        backdrop-filter: blur(5px);
+        border-radius: 20px 0 20px 20px;
+        gap: initial;
+    }
+    .landing header .nav-icon .nav a{
+        margin: 5px 0;
+    }
+    .landing header .nav-icon .nav{
+        display: none;
+        width: 200px;
+        height: 350px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column ;
+        position: absolute;
+        top: 30px;
+        left: -200px;
+        background-color: #0005;
+        z-index: 50;
+        backdrop-filter: blur(5px);
+        border-radius: 20px 0 20px 20px;
+    }
+    .landing header .nav-icon.show .nav{
+        display: flex;
+    }
+    .landing .content .text{
+        width: calc(100% - 300px);
+    }
+    .landing .content .text .form{
+        width: 100%;
+    }
+    .landing .content .image .img-cart img{
+        width: 250px;
+    }
+    .flow{
+        margin-bottom: 80px;
+    }
+    .flow .flow-list{
+        flex-wrap: wrap;
+    }
+    .flow .flow-list li{
+        width: calc(100% / 5);
+        height: 150px;
+
+    }
+    .flow .flow-list li .image{
+        width: 50px;
+        height: 50px;
+    }
+    .flow .flow-list li .image img{
+        width: 55%;
+    }
+}
+@media (max-width: 767px){
+    section{
+        padding: 0 15px;
+    }
+    .landing {
+        height: initial;
+        border-radius: 0 0 20px 20px;
+        padding-bottom: 130px;
+    }
+    .landing .content{
+        height: initial;
+        padding: 20px 0 0px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .landing .content .image{
+        margin: initial;
+    }
+    .landing .content .text{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .landing .content .text .form{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .flow .flow-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 20px;
+    }
+    .flow .flow-list li{
+        width: 90%;
+        height: 150px;
+    }
+
+}
+@media (max-width: 600px) {
+    .trending ul{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+    }
+    .trending ul li{
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .landing .content .text .form{
+        width: 320px;
+        justify-content: space-between;
+    }
+    .landing .content .text .form input[type="text"]{
+        width: 50%;
+    }
+    .landing .content .text .form input[type="button"]{
+        width: 35%;
+    }
+    .flow .flow-list li h3{
+        font-size: 14px;
+    }
+    .trending ul{
+        grid-template-columns: repeat(1,1fr);
+        gap: 15px;
+    }
+    .trending ul li{
+        width: 300px;
+    }
+    section .title{
+        text-align: center;
+    }
+    section .title .head h1{
+        font-size: 24px ;
+    }
+}
+@media (max-width: 370px) {
+    .landing .content .text .form{
+        width: 100%;
+    }
+    .landing .content .text .form input[type="text"]{
+        width: 50%;
+    }
+    .landing .content .text .form input[type="button"]{
+        width: 45%;
+    }
+
+    .flow .flow-list li{
+        width: 100%;
+    }
+    .flow .flow-list li .image{
+        width: 45px;
+        height: 45px;
+    }
+    section .title .head a{
+        font-size: 12px ;
+    }
+}
