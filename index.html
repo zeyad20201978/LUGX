@@ -11,44 +11,44 @@
 
 <body>
     <div class="container">
+        <header>
+            <a href="#" class="logo">
+                <img src="images/landing/logo.png" alt="Logo" title="Logo">
+            </a>
+            <div class="nav-icon" id="list">
+                <button class="icon" onclick="show()">
+                    <i class="fas fa-bars" id="icon"></i>
+                </button>
+                <ul class="nav" >
+                    <li>
+                        <a href="#Home" class="active">
+                            home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Shop">
+                            our shop
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Product">
+                            product details
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Contact">
+                            contact us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Sign" class="sign">
+                            sign in
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
         <section class="landing">
-            <header>
-                <a href="#" class="logo">
-                    <img src="images/landing/logo.png" alt="Logo" title="Logo">
-                </a>
-                <div class="nav-icon" id="list">
-                    <button class="icon" onclick="show()">
-                        <i class="fas fa-bars" id="icon"></i>
-                    </button>
-                    <ul class="nav" >
-                        <li>
-                            <a href="#Home" class="active">
-                                home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#Shop">
-                                our shop
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#Product">
-                                product details
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#Contact">
-                                contact us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#Sign" class="sign">
-                                sign in
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </header>
             <div class="content">
                 <div class="text">
                     <div class="hello">
@@ -171,6 +171,118 @@
                     </li>
                 </ul>
         </section>
+        <section class="top-games">
+            <div class="title">
+                <p class="state">top games</p>
+                <div class="head">
+                    <h1>most played</h1>
+                    <a href="#">view all</a>
+                </div>
+            </div>
+            <ul class="carts">
+                <li>
+                    <img src="images/top-game/top-game-01.jpg" alt="game">
+                    <div class="details">
+                        <h3 class="type">adventure</h3>
+                        <h2>assasin creed</h2>
+                    </div>
+                    <a href="" class="explore">Explore</a>
+                </li>
+                <li>
+                    <img src="images/top-game/top-game-02.jpg" alt="game">
+                    <div class="details">
+                        <h3 class="type">adventure</h3>
+                        <h2>assasin creed</h2>
+                    </div>
+                    <a href="" class="explore">Explore</a>
+                </li>
+                <li>
+                    <img src="images/top-game/top-game-03.jpg" alt="game">
+                    <div class="details">
+                        <h3 class="type">adventure</h3>
+                        <h2>assasin creed</h2>
+                    </div>
+                    <a href="" class="explore">Explore</a>
+                </li>
+                <li>
+                    <img src="images/top-game/top-game-04.jpg" alt="game">
+                    <div class="details">
+                        <h3 class="type">adventure</h3>
+                        <h2>assasin creed</h2>
+                    </div>
+                    <a href="" class="explore">Explore</a>
+                </li>
+                <li>
+                    <img src="images/top-game/top-game-05.jpg" alt="game">
+                    <div class="details">
+                        <h3 class="type">adventure</h3>
+                        <h2>assasin creed</h2>
+                    </div>
+                    <a href="" class="explore">Explore</a>
+                </li>
+                <li>
+                    <img src="images/top-game/top-game-06.jpg" alt="game">
+                    <div class="details">
+                        <h3 class="type">adventure</h3>
+                        <h2>assasin creed</h2>
+                    </div>
+                    <a href="" class="explore">Explore</a>
+                </li>
+            </ul>
+        </section>
+        <section class="top-categories">
+            <div class="title">
+                <p class="state">categories</p>
+                <div class="head">
+                    <h1>top categories</h1>
+                </div>
+            </div>
+            <ul class="carts">
+                <li>
+                    <h2>Action</h2>
+                    <img src="images/categories/categories-01.jpg" alt="Cart">
+                </li>
+                <li>
+                    <h2>Action</h2>
+                    <img src="images/categories/categories-02.jpg" alt="Cart">
+                </li>
+                <li>
+                    <h2>Action</h2>
+                    <img src="images/categories/categories-03.jpg" alt="Cart">
+                </li>
+                <li>
+                    <h2>Action</h2>
+                    <img src="images/categories/categories-04.jpg" alt="Cart">
+                </li>
+                <li>
+                    <h2>Action</h2>
+                    <img src="images/categories/categories-05.jpg" alt="Cart">
+                </li>
+            </ul>
+        </section>
+        <section class="pre-foot">
+            <div class="shop">
+                <div class="title"><p class="state">our shop</p></div>
+                <div class="head-title">
+                    <h1>go pre-order buy & get best <span>prices</span> for you</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, asperiores?</p>
+                </div>
+                <a href="#">shop now</a>
+            </div>
+            <div class="form">
+                <div class="title"><p class="state">newsletter</p></div>
+                <div class="head-title">
+                    <h1>get up to $100 off just buy <span>subscribe</span> newsletter</h1>
+                </div>
+                <form>
+                    <input type="email" placeholder="Your email...">
+                    <input type="button" value="subscribe now">
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2048 LUGX Gaming Company. All rights reserved . Design: Ziad Hodeeb</p>
+        </footer>
     </div>
     <script>
         let x = document.getElementById("list");
